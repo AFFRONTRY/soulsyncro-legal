@@ -1,0 +1,6 @@
+# Les pages sont écrites par un générateur, avec des fins de ligne Unix.
+#
+# Sans cette règle, Windows les convertit en CRLF à chaque écriture : les trois
+# fichiers apparaissent alors modifiés à chaque publication, alors qu'aucun mot
+# n'a bougé — et la mise à jour s'arrête sur un dépôt « sale » qui ne l'est pas.
+*.html text eol=lf
