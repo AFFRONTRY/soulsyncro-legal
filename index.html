@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accueil — SoulSyncro</title>
+<meta name="description" content="Accueil de l'application SoulSyncro, éditée par AFFRONTRY (Abidjan, Côte d'Ivoire).">
+<style>
+  :root {
+    --primary: #B8502A; --accent: #1E6B52; --fond: #FDF7F0;
+    --surface: #F6EBDF; --bord: #EADCCB;
+    --texte: #2B1D14; --attenue: #7A6252;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 1.25rem 4rem;
+    background: var(--fond); color: var(--texte);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px; line-height: 1.65;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { max-width: 44rem; margin: 0 auto; padding: 2rem 0 1rem; }
+  .marque { font-size: 1.5rem; font-weight: 700; color: var(--primary); letter-spacing: -0.02em; }
+  .editeur { color: var(--attenue); font-size: 0.9rem; margin-top: 0.15rem; }
+  nav { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.25rem 0 0; }
+  nav a {
+    padding: 0.4rem 0.9rem; border-radius: 999px;
+    border: 1px solid var(--bord); background: #fff;
+    color: var(--attenue); text-decoration: none; font-size: 0.9rem;
+  }
+  nav a.actif { background: var(--primary); border-color: var(--primary); color: #fff; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 1.5rem 0 0.5rem; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 0.5rem; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 0.4rem; }
+  hr { border: 0; border-top: 1px solid var(--bord); margin: 2rem 0; }
+  a { color: var(--primary); }
+  code { background: var(--surface); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+  ul { padding-left: 1.15rem; }
+  li { margin-bottom: 0.35rem; }
+  /* Les tableaux debordent sur un ecran de 360 pixels : ils defilent seuls,
+     plutot que d'etirer la page entiere. */
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--bord); vertical-align: top; }
+  th { background: var(--surface); font-weight: 600; white-space: nowrap; }
+  footer { max-width: 44rem; margin: 3rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--bord); color: var(--attenue); font-size: 0.85rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #1a120c; --surface: #2a1d14; --bord: #3d2c20; --texte: #f2e8df; --attenue: #b09a88; }
+    nav a { background: var(--surface); }
+    th { background: var(--surface); }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="marque">SoulSyncro</div>
+  <div class="editeur">Édité par AFFRONTRY — Abidjan, Côte d'Ivoire</div>
+  <nav>
+    <a href="index.html" class="actif" aria-current="page">Accueil</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="cgu.html">Conditions d'utilisation</a>
+  </nav>
+</header>
+<main>
+
+<h1>SoulSyncro</h1>
+<p>Application de rencontre par la personnalité, éditée par <strong>AFFRONTRY</strong>
+à Abidjan. Cette page réunit les documents que la loi nous demande de rendre
+publics.</p>
+<ul>
+  <li><a href="confidentialite.html">Politique de confidentialité</a> — ce que nous
+  collectons, pourquoi, combien de temps, et comment exercer vos droits.</li>
+  <li><a href="cgu.html">Conditions générales d'utilisation</a> — les règles de la
+  communauté et nos engagements.</li>
+</ul>
+<h2>Effacer votre compte</h2>
+<p>Vous pouvez effacer votre compte <strong>depuis l'application</strong>, sans nous
+écrire : <em>Profil → Mes données → Effacer mon compte</em>. L'effacement est
+définitif et immédiat.</p>
+<p>Si vous n'avez plus accès à l'application, écrivez à
+<a href="mailto:affrontry@gmail.com">affrontry@gmail.com</a> : nous traitons la
+demande sous 30 jours.</p>
+<h2>Nous écrire</h2>
+<p>Pour toute question sur vos données, un signalement ou une réclamation :
+<a href="mailto:affrontry@gmail.com">affrontry@gmail.com</a>.</p>
+
+</main>
+<footer>
+  AFFRONTRY — RCCM CI-ABJ-05-2026 — Abidjan, Cocody, 2 Plateaux.<br>
+  <a href="mailto:affrontry@gmail.com">affrontry@gmail.com</a> · +225 07 87 07 64 83
+</footer>
+</body>
+</html>
