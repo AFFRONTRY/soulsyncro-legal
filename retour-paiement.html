@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Retour vers SoulSyncro</title>
+<style>
+  :root { --primary: #B8502A; --fond: #FDF7F0; --texte: #2B1D14; --attenue: #7A6252; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; padding: 2rem 1.25rem;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: var(--fond); color: var(--texte); text-align: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px; line-height: 1.55;
+  }
+  .marque { font-size: 1.6rem; font-weight: 700; color: var(--primary); letter-spacing: -0.02em; }
+  p { max-width: 22rem; margin: 0.75rem 0 0; }
+  .en { color: var(--attenue); font-size: 0.92rem; }
+  a.bouton {
+    display: block; width: 100%; max-width: 22rem; margin: 2rem 0 0;
+    padding: 1rem 1.25rem; border-radius: 999px;
+    background: var(--primary); color: #fff; text-decoration: none;
+    font-size: 1.1rem; font-weight: 600;
+  }
+  a.bouton .en { color: #fff; opacity: 0.85; font-weight: 400; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #1a120c; --texte: #f2e8df; --attenue: #b09a88; }
+  }
+</style>
+</head>
+<body>
+  <div class="marque">SoulSyncro</div>
+  <p>C'est fini ici. Reviens dans l'application : elle vérifie ton paiement.</p>
+  <p class="en">You're done here. Go back to the app: it checks your payment.</p>
+  <a class="bouton" href="soulsyncro://abonnement">Revenir à SoulSyncro<br><span class="en">Back to SoulSyncro</span></a>
+  <script>location.href = 'soulsyncro://abonnement';</script>
+</body>
+</html>
