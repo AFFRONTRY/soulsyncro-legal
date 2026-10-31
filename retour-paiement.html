@@ -34,7 +34,12 @@
   <div class="marque">SoulSyncro</div>
   <p>C'est fini ici. Reviens dans l'application : elle vérifie ton paiement.</p>
   <p class="en">You're done here. Go back to the app: it checks your payment.</p>
-  <a class="bouton" href="soulsyncro://abonnement">Revenir à SoulSyncro<br><span class="en">Back to SoulSyncro</span></a>
-  <script>location.href = 'soulsyncro://abonnement';</script>
+  <a class="bouton" id="retour" href="soulsyncro://abonnement">Revenir à SoulSyncro<br><span class="en">Back to SoulSyncro</span></a>
+  <script>
+    var ref = new URLSearchParams(location.search).get('reference') || '';
+    var lien = 'soulsyncro://abonnement' + (/^SS-[A-Z0-9]{12}$/.test(ref) ? '?reference=' + ref : '');
+    document.getElementById('retour').href = lien;
+    location.href = lien;
+  </script>
 </body>
 </html>
