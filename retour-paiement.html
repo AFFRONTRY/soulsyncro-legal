@@ -50,7 +50,7 @@
   <div class="signature" role="img" aria-label="SoulSyncro"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="cadre-embleme"><rect width="100" height="100" rx="31.25"/></clipPath></defs><rect class="fond" width="100" height="100" rx="31.25"/><g clip-path="url(#cadre-embleme)"><g class="traces"><circle cx="50" cy="50" r="43"/><circle cx="50" cy="50" r="26"/><line x1="0" y1="66" x2="100" y2="66"/><line class="pointille" x1="50" y1="0" x2="50" y2="100"/><line x1="50" y1="4" x2="5" y2="81.94"/><line x1="50" y1="4" x2="95" y2="81.94"/></g><g class="jambes"><line x1="45.75" y1="22.36" x2="18.25" y2="69.99"/><line x1="54.25" y1="22.36" x2="81.75" y2="69.99"/></g></g></svg><span class="nom-marque">Soul<span class="syncro">Syncro</span><span class="point"></span></span></div>
   <p>C'est fini ici. Reviens dans l'application : elle vérifie ton paiement.</p>
   <p class="en">You're done here. Go back to the app: it checks your payment.</p>
-  <a class="bouton" id="retour" href="soulsyncro://abonnement">Revenir à SoulSyncro<br><span class="en">Back to SoulSyncro</span></a>
+  <a class="bouton" id="retour" href="soulsyncro://abonnement">Revenir à l'application<br><span class="en">Back to the app</span></a>
   <script>
     var ref = new URLSearchParams(location.search).get('reference') || '';
     var lien = 'soulsyncro://abonnement' + (/^SS-[A-Z0-9]{12}$/.test(ref) ? '?reference=' + ref : '');
