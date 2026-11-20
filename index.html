@@ -25,6 +25,9 @@
   @media (prefers-color-scheme: dark) {
     :root { --logo-nom: #F6EBE1; --logo-syncro: #E1794F; --logo-point: #4FB08C; --logo-fond: #3B221A; }
   }
+  .nom-marque { font-family: "SoulSyncro Logo", Georgia, serif; font-weight: 700; color: var(--logo-nom); white-space: nowrap; }
+  .nom-marque .syncro { color: var(--logo-syncro); }
+  .nom-marque .point { display: inline-block; width: 0.27em; height: 0.27em; margin-left: 0.13em; border-radius: 50%; background: var(--logo-point); vertical-align: 0.09em; }
   .signature { display: inline-flex; align-items: baseline; }
   .signature svg { flex: none; width: 40px; height: 40px; margin-right: 2px; position: relative; top: 2px; }
   .signature .fond { fill: var(--logo-fond); }
@@ -32,9 +35,8 @@
   .signature .traces * { stroke-width: 1; vector-effect: non-scaling-stroke; }
   .signature .pointille { stroke-dasharray: 2 2; }
   .signature .jambes { stroke: var(--logo-syncro); stroke-width: 17; stroke-linecap: round; }
-  .signature .nom { display: inline-flex; align-items: center; font: 700 30px/38px "SoulSyncro Logo", Georgia, serif; color: var(--logo-nom); }
-  .signature .syncro { color: var(--logo-syncro); }
-  .signature .point { flex: none; width: 8px; height: 8px; margin: 8px 0 0 4px; border-radius: 50%; background: var(--logo-point); }
+  .signature .nom-marque { display: inline-flex; align-items: center; font-size: 30px; line-height: 38px; }
+  .signature .point { flex: none; width: 8px; height: 8px; margin: 8px 0 0 4px; }
   .editeur { color: var(--attenue); font-size: 0.9rem; margin-top: 0.15rem; }
   nav { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.25rem 0 0; }
   nav a {
@@ -66,7 +68,7 @@
 </head>
 <body>
 <header>
-  <div class="signature" role="img" aria-label="SoulSyncro"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="cadre-embleme"><rect width="100" height="100" rx="31.25"/></clipPath></defs><rect class="fond" width="100" height="100" rx="31.25"/><g clip-path="url(#cadre-embleme)"><g class="traces"><circle cx="50" cy="50" r="43"/><circle cx="50" cy="50" r="26"/><line x1="0" y1="66" x2="100" y2="66"/><line class="pointille" x1="50" y1="0" x2="50" y2="100"/><line x1="50" y1="4" x2="5" y2="81.94"/><line x1="50" y1="4" x2="95" y2="81.94"/></g><g class="jambes"><line x1="45.75" y1="22.36" x2="18.25" y2="69.99"/><line x1="54.25" y1="22.36" x2="81.75" y2="69.99"/></g></g></svg><span class="nom"><span>Soul</span><span class="syncro">Syncro</span><span class="point"></span></span></div>
+  <div class="signature" role="img" aria-label="SoulSyncro"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="cadre-embleme"><rect width="100" height="100" rx="31.25"/></clipPath></defs><rect class="fond" width="100" height="100" rx="31.25"/><g clip-path="url(#cadre-embleme)"><g class="traces"><circle cx="50" cy="50" r="43"/><circle cx="50" cy="50" r="26"/><line x1="0" y1="66" x2="100" y2="66"/><line class="pointille" x1="50" y1="0" x2="50" y2="100"/><line x1="50" y1="4" x2="5" y2="81.94"/><line x1="50" y1="4" x2="95" y2="81.94"/></g><g class="jambes"><line x1="45.75" y1="22.36" x2="18.25" y2="69.99"/><line x1="54.25" y1="22.36" x2="81.75" y2="69.99"/></g></g></svg><span class="nom-marque">Soul<span class="syncro">Syncro</span><span class="point"></span></span></div>
   <div class="editeur">Édité par AFFRONTRY — Abidjan, Côte d'Ivoire</div>
   <nav>
     <a href="index.html" class="actif" aria-current="page">Accueil</a>
@@ -76,7 +78,7 @@
 </header>
 <main>
 
-<h1>SoulSyncro</h1>
+<h1>Documents publics</h1>
 <p>Application de rencontre par la personnalité, éditée par <strong>AFFRONTRY</strong>
 à Abidjan. Cette page réunit les documents que la loi nous demande de rendre
 publics.</p>
